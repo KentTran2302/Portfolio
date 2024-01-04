@@ -13,16 +13,16 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
+    kotlin,
+    java,
+    martinrea,
+    swril,
     jobit,
     tripguide,
-    threejs,
+    geogrind,
+    iosStore,
+    pickup,
   } from "../assets";
   
   export const navLinks = [
@@ -42,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Web Developer",
       icon: web,
     },
     {
@@ -50,11 +50,11 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Web Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Infrastructure Engineer",
       icon: creator,
     },
   ];
@@ -97,16 +97,16 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Java",
+      icon: java,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Kotlin",
+      icon: kotlin,
     },
     {
       name: "docker",
@@ -116,57 +116,56 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Full-Stack Developer Intern",
+      company_name: "Smart Waterloo Region Innovation Lab",
+      icon: swril,
+      iconBg: "#FFFFFF",
+      date: "September 2023 - December 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a dynamic iOS app with React Native and Bun.JS, enhancing user loading time and shortening transitions gap time between pages through navigation react hooks.",
+        "Implemented React Web3 Context hooks and JWS proof service to optimize GraphQL Apollo Client for 10% bandwidth gain and improved data security with blockchain decentralization.",
+        "Migrated database to use GraphQL schemas, wrote unit and integration tests to boost test coverage to 80%.",
+        "Utilized Redis cache to significantly improved customer chat session data.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Software Developer Intern",
+      company_name: "Martinrea Inc.",
+      icon: martinrea,
+      iconBg: "#FFFFFF",
+      date: "January 2023 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a Flask web app with integrated computer vision, reducing camera configuration and mask processing time by 50%, boosting productivity by 20%, saving $58k annually.",
+        "Ensured data security and maintained 90% uptime with API security practices, MongoDB, and MySQL for station camera settings.",
+        "Improved stakeholder satisfaction by 25% through an intuitive front-end user interface using Werkzeug and Jinja2 templates, garnering positive feedback.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -198,67 +197,79 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "GeoGrind",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform, iOS mobile and Desktop application that helps university students to navigate their campus life, discover study partners near them, connect over courses, and redefine the boundaries of collaborative learning.",
       tags: [
         {
-          name: "react",
+          name: "react-typescript",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
+          name: "firebase",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "kotlin-springboot",
+          color: "green-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "grpc",
+          color: "pink-text-gradient",
         },
         {
           name: "scss",
-          color: "pink-text-gradient",
+          color: "blue-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: geogrind,
+      source_code_link: "https://github.com/GeoGrind",
     },
     {
-      name: "Trip Guide",
+      name: "iOS Product Store", 
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An ecommerce shopping web application that sells ios products with the best prices on the market. Also, a user-friendly interface and reliable payment method utilizes Stripe payment gateway which increases user experiences.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "reactjs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "stripe",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: iosStore,
+      source_code_link: "https://github.com/Kenttrann2302/Kent-s-ios-products-store",
+    },
+    {
+      name: "PickUp",
+      description:
+        "Your ultimate destination for connecting with local sports enthusiasts! Discover and join pickup games happening right in your neighborhood. Whether you're a seasoned athlete or just looking to have some fun, Pickup has you covered. Don't miss out on the action – join the game today!",
+      tags: [
+        {
+          name: "react-javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "node-express-js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: pickup,
+      source_code_link: "https://github.com/PickUp89",
     },
   ];
   

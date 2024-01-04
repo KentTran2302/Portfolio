@@ -13,6 +13,8 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import kotlin from "./tech/kotlin.png";
+import java from "./tech/java.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -23,10 +25,14 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import martinrea from "./company/martinrea.png";
+import swril from "./company/SWRIL.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import geogrind from "./geogrind.png";
+import iosStore from "./ios.png";
+import pickup from "./pickup.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -51,12 +57,18 @@ export {
   redux,
   tailwind,
   typescript,
+  kotlin,
+  java,
   threejs,
   meta,
   shopify,
-  starbucks,
+  martinrea,
+  swril,
   tesla,
   carrent,
+  geogrind,
   jobit,
   tripguide,
+  iosStore,
+  pickup,
 };
