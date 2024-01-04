@@ -63,7 +63,7 @@ const ProjectCard = (props: {
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(null)}>
         <p className={textStyles.sectionSubText}>
           My work
         </p>

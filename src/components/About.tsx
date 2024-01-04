@@ -11,18 +11,21 @@ const ServiceCard = (props: {
   title: any,
   icon: any,
 }) => {
+  const tiltOptions = {
+    max: 45,
+    scale: 1,
+    speed: 450,
+  };
+
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt 
+      options={tiltOptions}
+      className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * props.index, 0.75)}
         className="w-full green-pink gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
-          options={{
-            max:45,
-            scale:1,
-            speed: 450,
-          }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={props.icon} alt={props.title} className="w-16 h-16 object-contain"/>
@@ -36,7 +39,7 @@ const ServiceCard = (props: {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(null)}>
         <p className={textStyles.sectionSubText}>
           Introduction
         </p>

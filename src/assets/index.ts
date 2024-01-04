@@ -35,6 +35,7 @@ import iosStore from "./ios.png";
 import pickup from "./pickup.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import shoppy from "./shoppy.png";
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   tripguide,
   iosStore,
   pickup,
+  shoppy,
 };

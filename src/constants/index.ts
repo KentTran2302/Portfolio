@@ -18,11 +18,10 @@ import {
     java,
     martinrea,
     swril,
-    jobit,
-    tripguide,
     geogrind,
     iosStore,
     pickup,
+    shoppy,
   } from "../assets";
   
   export const navLinks = [
@@ -270,6 +269,27 @@ import {
       ],
       image: pickup,
       source_code_link: "https://github.com/PickUp89",
+    },
+    {
+      name: "Admin DashBoard App",
+      description:
+        "This is a website using React.js to create an admin dashboard for a company called Shoppy where ecommerce is using.",
+      tags: [
+        {
+          name: "react-javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: shoppy,
+      source_code_link: "https://github.com/Kenttrann2302/Kent-Admin-Dashboard--App",
     },
   ];
   

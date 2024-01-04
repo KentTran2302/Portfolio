@@ -1,5 +1,5 @@
 import { textStyles } from "../textStyles";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -51,7 +51,7 @@ const Feedbacks = () => {
       className="mt-12 bg-black-100 rounded-[20px]"
     >
       <div className={`${textStyles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant(delay)}>
           <p className={textStyles.sectionSubText}>What others say</p>
           <h2 className={textStyles.sectionHeadText}>Testimonials.</h2>
         </motion.div>

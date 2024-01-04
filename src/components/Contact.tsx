@@ -7,7 +7,7 @@ import { EarthCanvas } from ".";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: '',
     email: '',

@@ -12,7 +12,7 @@ const ExperienceCard = (
     experience: any,
   }
 ) => {
-  const { title, company_name, date, iconBg, icon, points } = props.experience;
+  const { title, company_name, icon, points } = props.experience;
 
   return (
     <VerticalTimelineElement
@@ -37,7 +37,7 @@ const ExperienceCard = (
         </p>
       </div>
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {points.map((point, index) => (
+        {points.map((point: any, index: any) => (
           <li
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
@@ -53,7 +53,7 @@ const ExperienceCard = (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(null)}>
         <p className={textStyles.sectionSubText}>
           What I have done so far
         </p>
