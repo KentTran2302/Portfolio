@@ -1,3 +1,4 @@
+import { title } from "process";
 import {
     mobile,
     backend,
@@ -22,6 +23,9 @@ import {
     iosStore,
     pickup,
     shoppy,
+    qualifacts,
+    uow,
+    resumeconnect,
   } from "../assets";
   
   export const navLinks = [
@@ -115,16 +119,39 @@ import {
   
   const experiences = [
     {
-      title: "Full-Stack Developer Intern",
+      title: "Software Developer Intern",
+      company_name: "University of Waterloo",
+      icon: uow,
+      iconBg: "#FFFFFF",
+      date: "Januaray 2025 - April 2025",
+      points: [
+        "Collaborated with senior engineers and designers to develop a Django web application to host scholarly articles, achieving a monthly usage of 2,000+ researchers",
+        "Built a search engine using AWS ElasticSearch, boosting query speed by 30% across 10,000+ documents",
+        "Reduced feature rollout time by 70% by building CI/CD pipelines using Docker and GitHub Actions to automate Django deployments on DigitalOcean",
+        "Integrated centralized logging with Django middleware and Sentry, reducing error tracking time by 20%"
+      ],
+    },
+    {
+      title: "Software Developer Intern",
+      company_name: "Qualifacts OnCall Health",
+      icon: qualifacts,
+      iconBg: "#FFFFFF",
+      date: "May 2024 - August 2024",
+      points: [
+        "Saved medical documentation time up to 25 hours weekly by building an AI Chrome Extension using Django and React to automate clinical note-taking for therapists by transcribing Zoom sessions",
+        "Leveraged Redis and AWS CDN to cache 20,000+ documents monthly, improving P90 API response time by 30x",
+        "Developed production monitoring services with Splunk SPL to track user activity and system errors in real time, reducing incident detection time by 30% across critical services",
+      ],
+    },
+    {
+      title: "Software Developer Intern",
       company_name: "Smart Waterloo Region Innovation Lab",
       icon: swril,
       iconBg: "#FFFFFF",
       date: "September 2023 - December 2023",
       points: [
-        "Developed a dynamic iOS app with React Native and Bun.JS, enhancing user loading time and shortening transitions gap time between pages through navigation react hooks.",
-        "Implemented React Web3 Context hooks and JWS proof service to optimize GraphQL Apollo Client for 10% bandwidth gain and improved data security with blockchain decentralization.",
-        "Migrated database to use GraphQL schemas, wrote unit and integration tests to boost test coverage to 80%.",
-        "Utilized Redis cache to significantly improved customer chat session data.",
+        "Migrated an event manager app to use React Native with Bun.js and improved its chat feature to reduce the average loading time from 1.2s to 150ms by using Redis caching",
+        "Teamed up with engineers to upgrade data infrastructure to prevent data overfetching and reduce significant bandwidth traffic by using Web3 wallet context and JWS-based authentication",
       ],
     },
     {
@@ -134,9 +161,8 @@ import {
       iconBg: "#FFFFFF",
       date: "January 2023 - April 2023",
       points: [
-        "Built a Flask web app with integrated computer vision, reducing camera configuration and mask processing time by 50%, boosting productivity by 20%, saving $58k annually.",
-        "Ensured data security and maintained 90% uptime with API security practices, MongoDB, and MySQL for station camera settings.",
-        "Improved stakeholder satisfaction by 25% through an intuitive front-end user interface using Werkzeug and Jinja2 templates, garnering positive feedback.",
+        "Built a Flask web app with MongoDB and MySQL to integrate with a computer vision program, reducing sensor installation and maintenance cost by $58,000 annually",
+        "Increased object detection accuracy by 50% through automated image processing and Mean Square Error formula Projects",
       ],
     },
     // {
@@ -195,6 +221,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "ResumeConnect",
+      description: 
+        "Led a team to build a platform for uploading resumes, getting community feedback, and AI-improved versions. Engineered React frontend, Flask/MongoDB backend, and Neurelo for schema validation and query optimization.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "pink-text-gradient",
+        }, 
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+      ],
+      image: resumeconnect,
+      source_code_link: "https://github.com/kinaz-xxr/ResumeConnect",
+    },
     {
       name: "GeoGrind",
       description:

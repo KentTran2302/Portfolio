@@ -27,10 +27,13 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import martinrea from "./company/martinrea.png";
 import swril from "./company/SWRIL.png";
+import qualifacts from "./company/qualifacts.png";
+import uow from "./company/uow.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import geogrind from "./geogrind.png";
+import resumeconnect from "./resumeconnect.png";
 import iosStore from "./ios.png";
 import pickup from "./pickup.png";
 import jobit from "./jobit.png";
@@ -73,4 +76,7 @@ export {
   iosStore,
   pickup,
   shoppy,
+  qualifacts,
+  uow,
+  resumeconnect,
 };
